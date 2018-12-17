@@ -2,7 +2,7 @@
 <html>
 <head>
   <% include ../partials/header.ejs %>
-  <script src="/rita-full.js"></script>
+  <script type="text/javascript" src="../rita-full.js"></script>
 </head>
 
 <body>
@@ -28,7 +28,7 @@
 <script>
 function wawa() {
   var variable = document.getElementById('input_id').value;
-  document.getElementById('alert').innerHTML =  RiTa.tokenize(variable);
+  document.getElementById('alert').innerHTML =  rita-full.tokenize(variable);
 }
 </script>
     
