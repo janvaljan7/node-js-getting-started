@@ -30,6 +30,19 @@
 <script>
 function wawa() {
   var variable = document.getElementById('input_id').value;
+  var words = RiTa.tokenize(variable);
+  <input type="button" value=words[1] onclick="fafa()" style="color:black" />
+  <input type="button" value=words[2] onclick="fafa()" style="color:black" />
+  document.getElementById('alert').innerHTML =  RiTa.tokenize(variable);
+}
+</script>
+
+<script>
+function fafa() {
+  var variable = document.getElementById('input_id').value;
+  
+  <input type="button" value=words[1] onclick="fafa()" style="color:black" />
+  <input type="button" value=words[2] onclick="fafa()" style="color:black" />
   document.getElementById('alert').innerHTML =  RiTa.tokenize(variable);
 }
 </script>
