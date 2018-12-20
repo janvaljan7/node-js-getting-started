@@ -24,6 +24,8 @@
 <form>
     <input type="text" id="input_id" value="" style="color:black">
     <input type="button" value="Submit" onclick="wawa()" style="color:black" />
+    <input type="button" value="First" onclick="fafa()" style="color:black" />
+    <input type="button" value="Second" onclick="fafa()" style="color:black" />
     <div id="alert" style="color: red"></div>
   </form>
 
@@ -32,12 +34,12 @@ function wawa() {
   var variable = document.getElementById('input_id').value;
   var words = RiTa.tokenize(variable);
   document.getElementById('alert').innerHTML =  RiTa.tokenize(variable);
-    var variable2 = document.getElementById('input_id').value;
+
+}
+function fafa() {
+  var variable2 = document.getElementById('input_id').value;
   document.getElementById('alert').innerHTML =  variable2;
   
- <a input type="button" value=words[1] onclick="fafa()" style="color:black" />
-  <a input type="button" value=words[2] onclick="fafa()" style="color:black" />
-
 }
 </script>
 
