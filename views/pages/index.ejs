@@ -23,9 +23,9 @@
     
 <form>
     <input type="text" id="input_id" value="" style="color:black">
-    <input type="button" value="Submit" onclick="wawa()" style="color:black" />
-    <input type="button" value="First" onclick="fafa()" style="color:black" />
-    <input type="button" value="Second" onclick="fafa()" style="color:black" />
+    <input type="button" value="Submit" onclick="wawa()" style="color:black" /></br>
+    <input type="button" id="1" value="First" onclick="fafa(this.id)" style="color:black" />
+    <input type="button" id="2" value="Second" onclick="fafa(this.id)" style="color:black" />
     <div id="alert" style="color: red"></div>
   </form>
 
@@ -36,9 +36,9 @@ function wawa() {
   document.getElementById('alert').innerHTML =  RiTa.tokenize(variable);
 
 }
-function fafa() {
-  var variable2 = document.getElementById('input_id').value;
-  document.getElementById('alert').innerHTML =  variable2;
+function fafa(id) {
+  document.getElementById('alert').innerHTML =  id;
+  
   
 }
 </script>
